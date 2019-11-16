@@ -9,6 +9,21 @@ export default class Slider extends Component {
     translation: 0
   };
 
+  componentDidMount = () => {
+    window.addEventListener("keyup", this.handleKeyUp);
+  };
+  componentWillUnmount = () => {
+    window.removeEventListener("keyup", this.handleKeyUp);
+  };
+
+  handleKeyUp = e => {
+    if (e.keyCode === 37) {
+      this.slideLeft();
+    } else if (e.keyCode === 39) {
+      this.slideRight();
+    }
+  };
+
   slideLeft = () => {
     if (this.state.currentIndex === 0) return;
     this.setState(prevState => ({

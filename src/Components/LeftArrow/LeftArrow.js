@@ -5,7 +5,11 @@ export default class LeftArrow extends Component {
   render() {
     return (
       <div className="backArrow arrow" onClick={this.props.onArrowClick}>
-        <ArrowBackIosIcon />
+        <ArrowBackIosIcon
+          style={{
+            marginLeft: "8px"
+          }}
+        />
       </div>
     );
   }

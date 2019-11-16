@@ -22,6 +22,9 @@
   margin: 0 auto;
   overflow: hidden;
   white-space: nowrap;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
 }
 
 .slider-wrapper {
@@ -42,12 +45,15 @@
   justify-content: center;
   border-radius: 50%;
   cursor: pointer;
+  background-color: #15181d;
+  width: 45px;
+  height: 45px;
 }
 
 .nextArrow {
   position: absolute;
   top: 25%;
-  right: 25px;
+  right: 0px;
   z-index: 999;
   color: #fff;
 }
@@ -55,7 +61,7 @@
 .backArrow {
   position: absolute;
   top: 25%;
-  left: 25px;
+  left: 0px;
   z-index: 999;
   color: #fff;
 }

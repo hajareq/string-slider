@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Itroducing String Slider</p>
+        <p>Introducing String Slider</p>
         <Slider />
       </header>
     </div>

@@ -27,7 +27,7 @@
   text-align: center;
 }
 
-.slider-wrapper {
+.slider-container {
   position: relative;
   height: 100%;
   width: 100%;
@@ -40,28 +40,24 @@
 }
 
 .arrow {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
+  top: 25%;
   border-radius: 50%;
   cursor: pointer;
   background-color: #15181d;
   width: 45px;
   height: 45px;
+  z-index: 999;
+  color: #fff;
 }
 
-.nextArrow {
-  position: absolute;
-  top: 25%;
+.rightArrow {
   right: 0px;
-  z-index: 999;
-  color: #fff;
 }
 
-.backArrow {
-  position: absolute;
-  top: 25%;
+.leftArrow {
   left: 0px;
-  z-index: 999;
-  color: #fff;
 }

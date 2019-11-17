@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import LeftArrow from "../LeftArrow";
-import RightArrow from "../RightArrow";
+import Arrow from "../Arrow";
 
 export default class Slider extends Component {
   state = {
@@ -65,9 +64,8 @@ export default class Slider extends Component {
             </span>
           ))}
         </div>
-
-        <LeftArrow onArrowClick={this.slideLeft} />
-        <RightArrow onArrowClick={this.slideRight} />
+        <Arrow arrowDirection="leftArrow" onArrowClick={this.slideLeft} />
+        <Arrow arrowDirection="rightArrow" onArrowClick={this.slideRight} />
       </div>
     );
   }

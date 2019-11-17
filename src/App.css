@@ -13,12 +13,9 @@
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
-}
 .slider {
   position: relative;
-  width: 600px;
+  width: 75%;
   margin: 0 auto;
   overflow: hidden;
   white-space: nowrap;
